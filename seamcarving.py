@@ -10,8 +10,6 @@ import requests
 import numpy as np
 import cv2
 from numba import jit
-import time
-
 
 def seam_carve(image_downloaded, filename, newX, newY):
     img_array = np.array(bytearray(image_downloaded.content), dtype=np.uint8)
@@ -20,8 +18,6 @@ def seam_carve(image_downloaded, filename, newX, newY):
     y, x, c = img.shape
     removeX = x - newX
     removeY = y - newY
-
-    t = time.time()
 
     for i in range(removeX):
         img = seam_carve_helper(img)
@@ -68,13 +64,13 @@ def find_seam(energy):
                 energy[i][j] += min(min(energy[i - 1][j], energy[i - 1][j - 1]
                                 ), energy[i - 1][j + 1])
     seam[-1] = np.argmin(energy[-1])
-    for row in range(m - 2, -1, -1):
-        prv_x = seam[row + 1]
-        if prv_x == 0:
-            seam[row] = np.argmin(energy[row][0 : 2])
+    for i in range(m - 2, -1, -1):
+        pre_x = seam[i + 1]
+        if pre_x == 0:
+            seam[i] = np.argmin(energy[i][0 : 2])
         else:
-            seam[row] = (np.argmin(energy[row]
-                    [prv_x - 1: min(prv_x + 2, n - 1)]) + prv_x - 1)
+            seam[i] = (np.argmin(energy[i]
+                    [pre_x - 1: min(pre_x + 2, n - 1)]) + pre_x - 1)
     return seam
 
 # Remove the minimum seam
