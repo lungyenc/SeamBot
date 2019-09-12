@@ -1,0 +1,2 @@
+source ~/SeamBotSrc/tokenrc
+sudo -E python3 SeamBot/seambot.py
