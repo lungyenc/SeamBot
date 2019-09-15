@@ -10,7 +10,7 @@ and returns the images with new dimension that went through the
 seam carving algorithm.
 
 Seam Carving Helper Facebook Page:
-https://www.facebook.com/Seam-Carving-Helper-114070123299907/
+https://www.facebook.com/Seam-Carving-Helper
 
 The bot overview:
 ![System design](/images/system.png)
