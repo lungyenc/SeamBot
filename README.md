@@ -8,5 +8,8 @@ seam carving algorithm.
 
 Seam Carving Helper Facebook Page:
 https://www.facebook.com/Seam-Carving-Helper-114070123299907/
+<<<<<<< HEAD
 
 ![Bot user finite state machine](/images/botuser_fsm.png)
+=======
+>>>>>>> 8f846e464884384af1cb72cbfd93a8aa9ba5b36f
