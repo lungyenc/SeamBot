@@ -10,7 +10,7 @@ and returns the images with new dimension that went through the
 seam carving algorithm.
 
 Seam Carving Helper Facebook Page:
-https://www.facebook.com/Seam-Carving-Helper
+https://www.facebook.com/seamcarvinghelper/
 
 The bot overview:
 ![System design](/images/system.png)
@@ -19,8 +19,6 @@ The bot overview:
 The finite state machine desgin for bot user class:
 
 ![Bot user finite state machine](/images/botuser-fsm.png)
-
-
 
 You can find the basic seam carving information here:
 https://en.wikipedia.org/wiki/Seam_carving
