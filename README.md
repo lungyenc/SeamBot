@@ -9,4 +9,4 @@ seam carving algorithm.
 Seam Carving Helper Facebook Page:
 https://www.facebook.com/Seam-Carving-Helper-114070123299907/
 
-![Bot user finite state machine](/images/botuser_fsm.png)
+![Bot user finite state machine](/images/botuser-fsm.png)
